@@ -12,7 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description="PyTorch Object Detection Webcam Demo")
     parser.add_argument(
         "--config-file",
-        default="/home/e813/coding/FCOS/fcos_imprv_dcnv2_R_50_FPN_1x.yaml",
+        default="/home/e813/coding/gangdian/FCOS/k_config/fcos_R_101_FPN_2x.yaml",
         metavar="FILE",
         help="path to config file",
     )
