@@ -208,7 +208,7 @@ _C.MODEL.ROI_BOX_HEAD.PREDICTOR = "FastRCNNPredictor"
 _C.MODEL.ROI_BOX_HEAD.POOLER_RESOLUTION = 14
 _C.MODEL.ROI_BOX_HEAD.POOLER_SAMPLING_RATIO = 0
 _C.MODEL.ROI_BOX_HEAD.POOLER_SCALES = (1.0 / 16,)
-_C.MODEL.ROI_BOX_HEAD.NUM_CLASSES = 81
+_C.MODEL.ROI_BOX_HEAD.NUM_CLASSES = 7
 # Hidden layer dimension when using an MLP for the RoI box head
 _C.MODEL.ROI_BOX_HEAD.MLP_HEAD_DIM = 1024
 # GN
@@ -287,7 +287,7 @@ _C.MODEL.RESNETS.DEFORMABLE_GROUPS = 1
 # FCOS Options
 # ---------------------------------------------------------------------------- #
 _C.MODEL.FCOS = CN()
-_C.MODEL.FCOS.NUM_CLASSES = 81  # the number of classes including background
+_C.MODEL.FCOS.NUM_CLASSES = 7  # the number of classes including background
 _C.MODEL.FCOS.FPN_STRIDES = [8, 16, 32, 64, 128]
 _C.MODEL.FCOS.PRIOR_PROB = 0.01
 _C.MODEL.FCOS.INFERENCE_TH = 0.05
@@ -318,7 +318,7 @@ _C.MODEL.FCOS.USE_DCN_IN_TOWER = False
 _C.MODEL.RETINANET = CN()
 
 # This is the number of foreground classes and background.
-_C.MODEL.RETINANET.NUM_CLASSES = 81
+_C.MODEL.RETINANET.NUM_CLASSES = 7
 
 # Anchor aspect ratios to use
 _C.MODEL.RETINANET.ANCHOR_SIZES = (32, 64, 128, 256, 512)
